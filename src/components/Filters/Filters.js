@@ -51,7 +51,7 @@ const Filters = ({sendFilters}) => {
         </InputContainer>
 
         <InputContainer>
-          <label for="orderAlpha">Order alphabetically?</label>
+          <label>Order alphabetically?</label>
           <Input
             name="orderAlpha"
             type="checkbox"
