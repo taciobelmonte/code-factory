@@ -29,7 +29,7 @@ export const filterProductsBy = (products, filters) => {
          (product) => product.rating >= filters.minRating
        );
 
-    // Check if both orderAlpha and orderReverseAlpha are set
+    // Apply orderAlpha OR orderReverseAlpha filter in case they are not equal
     if (
     !(filters.hasOwnProperty("orderAlpha") &&
       filters.hasOwnProperty("orderReverseAlpha") &&
