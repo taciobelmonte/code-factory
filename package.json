@@ -4,10 +4,8 @@
   "description": "",
   "main": "public/index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html",
-    "dev": "react-scripts start",
-    "prod": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
