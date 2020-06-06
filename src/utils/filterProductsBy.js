@@ -14,7 +14,7 @@ export const filterProductsBy = (products, filters) => {
     return current.name > next.name ? 1 : current.name < next.name ? -1 : 0;
   };
 
-  // Apply filtering if filters object is provided OR
+  // Apply filtering if filters object is provided
   if (filters) {
     
      // Filter by text
