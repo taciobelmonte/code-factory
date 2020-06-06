@@ -12,7 +12,7 @@ const Product = ({ name, rating, id }) => (
 Product.propTypes = {
   name: PropTypes.string.isRequired,
   rating: PropTypes.number.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Product;
