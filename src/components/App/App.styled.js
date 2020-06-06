@@ -5,13 +5,13 @@ export const Container = styled.div`
 `;
 
 export const Products = styled.div`
-  margin: 30px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   clear: both;
 
   @media (min-width: 767px) {
+    margin: 30px 0 0 0;
     flex-direction: row;
   }
 `;
