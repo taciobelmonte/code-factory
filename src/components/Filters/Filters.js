@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import { Input, FiltersContainer, InputContainer } from "./Filters.styled";
+import { Input, FiltersContainer, InputContainer, Flex } from "./Filters.styled";
 
 const Filters = ({ sendFilters }) => {
   const [filters, setFilters] = useState({
@@ -49,39 +49,42 @@ const Filters = ({ sendFilters }) => {
         />
       </InputContainer>
 
-      <InputContainer>
-        <label>Order alphabetically?</label>
-        <Input
-          name="orderAlpha"
-          type="checkbox"
-          onChange={(e) =>
-            setFilters((filters) => {
-              return {
-                ...filters,
-                orderAlpha: !filters.orderAlpha,
-              };
-            })
-          }
-          defaultValue={filters.orderAlpha && filters.orderAlpha}
-        />
-      </InputContainer>
-
-      <InputContainer>
-        <label>Reverse order?</label>
-        <Input
-          name="orderReverseAlpha"
-          type="checkbox"
-          onChange={(e) =>
-            setFilters((filters) => {
-              return {
-                ...filters,
-                orderReverseAlpha: !filters.orderReverseAlpha,
-              };
-            })
-          }
-          defaultValue={filters.orderReverseAlpha && filters.orderReverseAlpha}
-        />
-      </InputContainer>
+      <Flex>
+        <InputContainer>
+          <label>Order alphabetically?</label>
+          <Input
+            name="orderAlpha"
+            type="checkbox"
+            onChange={(e) =>
+              setFilters((filters) => {
+                return {
+                  ...filters,
+                  orderAlpha: !filters.orderAlpha,
+                };
+              })
+            }
+            defaultValue={filters.orderAlpha && filters.orderAlpha}
+          />
+        </InputContainer>
+        <InputContainer>
+          <label>Reverse order?</label>
+          <Input
+            name="orderReverseAlpha"
+            type="checkbox"
+            onChange={(e) =>
+              setFilters((filters) => {
+                return {
+                  ...filters,
+                  orderReverseAlpha: !filters.orderReverseAlpha,
+                };
+              })
+            }
+            defaultValue={
+              filters.orderReverseAlpha && filters.orderReverseAlpha
+            }
+          />
+        </InputContainer>
+      </Flex>
     </FiltersContainer>
   );
 };

@@ -33,3 +33,21 @@ export const InputContainer = styled.div`
     }
   }
 `;
+
+export const Flex = styled.div`
+  display: flex;
+
+  div{
+    width: auto;
+  }
+
+  input[type=checkbox]{
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+
+  @media (min-width: 992px){
+    display: inline-block;
+  }
+`;

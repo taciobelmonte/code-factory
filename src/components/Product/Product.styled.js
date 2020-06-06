@@ -15,11 +15,15 @@ export const ProductContainer = styled.div`
   position: relative;
 
   @media (min-width: 767px) {
-    width: 45%;
+    width: 47%;
   }
 
   @media (min-width: 992px) {
     width: 31%;
+  }
+
+  @media (min-width: 1400px) {
+    width: 23%;
   }
 `;
 
